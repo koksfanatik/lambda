@@ -74,9 +74,12 @@ const sortSli = function () {
           console.log(`${result}`);
           sortSli();
           break;
-         case "exit":          
+        case "exit":          
           rl.close();
           break;
+        default:
+          console.log("unknow command");
+          sortSli();
         
       }
     });
